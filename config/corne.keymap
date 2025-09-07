@@ -29,10 +29,10 @@
 
         layer_1 {
             bindings = <
-&kp TAB           &kp C_REWIND  &kp C_NEXT      &kp K_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp N7     &kp N8  &kp N9        &kp EQUAL   &kp ASTERISK  &kp BACKSPACE
-&kp LEFT_SHIFT    &kp C_PAUSE   &kp LEFT_ARROW  &kp UP_ARROW      &kp DOWN_ARROW     &kp RIGHT_ARROW    &kp N4     &kp N5  &kp N6        &kp PLUS    &kp MINUS     &kp PERCENT
-&kp LEFT_CONTROL  &trans        &kp F11         &mkp MB4          &mkp MB5           &kp F5             &kp N1     &kp N2  &kp N3        &kp PERIOD  &kp SLASH     &kp ESC
-                                                &kp LEFT_CONTROL  &mo 1              &kp SPACE          &kp ENTER  &kp N0  &kp LEFT_ALT
+&kp TAB           &kp C_REWIND  &kp C_NEXT      &kp K_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp EQUAL   &kp N7  &kp N8        &kp N9  &kp ASTERISK  &kp BACKSPACE
+&kp LEFT_SHIFT    &kp C_PAUSE   &kp LEFT_ARROW  &kp UP_ARROW      &kp DOWN_ARROW     &kp RIGHT_ARROW    &kp PLUS    &kp N4  &kp N5        &kp N6  &kp MINUS     &kp PERCENT
+&kp LEFT_CONTROL  &trans        &kp F11         &mkp MB4          &mkp MB5           &kp F5             &kp PERIOD  &kp N1  &kp N2        &kp N3  &kp SLASH     &kp ESC
+                                                &kp LEFT_CONTROL  &mo 1              &kp SPACE          &kp ENTER   &kp N0  &kp LEFT_ALT
             >;
         };
 
