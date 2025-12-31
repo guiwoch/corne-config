@@ -23,9 +23,9 @@
             compatible = "zmk,behavior-unicode";
             label = "UNICODE";
         };
-        cedilla: mod_morph {
+        cedilha: mod_morph {
             compatible = "zmk,behavior-mod-morph";
-            label = "CEDILLA";
+            label = "CEDILHA";
             mods = <MOD_LSFT MOD_RSFT>;
             bindings = <&uc U+00E7>, <&uc U+00C7>;
         };
