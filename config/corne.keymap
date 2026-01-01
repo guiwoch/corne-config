@@ -50,7 +50,7 @@
             bindings = <
 &kp TAB           &kp GRAVE        &kp LESS_THAN      &kp GREATER_THAN  &kp AT_SIGN  &kp PIPE     &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR      &kp ASTERISK   &kp BACKSPACE
 &kp LEFT_SHIFT    &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp CARET         &kp EQUAL    &kp BSLH     &kp PLUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp SEMICOLON  &kp SQT
-&kp LEFT_CONTROL  &trans           &trans             &trans            &kp TILDE    &kp HASH     &kp COLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERIOD      &kp SLASH      &kp ESCAPE
+&kp LEFT_CONTROL  &trans           &kp PERCENT        &kp MINUS         &kp TILDE    &kp HASH     &kp COLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERIOD      &kp SLASH      &kp ESCAPE
                                                       &kp LEFT_CONTROL  &mo 1        &kp SPACE    &kp RETURN     &mo 2                 &kp LEFT_ALT
             >;
         };
