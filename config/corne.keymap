@@ -14,6 +14,8 @@
         capslock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <12 23>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <100>;
         };
     };
 
@@ -37,7 +39,7 @@
 
         layer_1 {
             bindings = <
-&kp C_PREV_TRACK  &kp LC(C_NEXT)  &kp C_NEXT      &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none       &kp ASTERISK  &kp BACKSPACE
+&kp C_PREVIOUS    &kp LC(C_NEXT)  &kp C_NEXT      &kp C_PLAY_PAUSE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none       &kp ASTERISK  &kp BACKSPACE
 &kp LEFT_SHIFT    &trans          &kp LEFT_ARROW  &kp UP_ARROW      &kp DOWN_ARROW     &kp RIGHT_ARROW    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS    &kp MINUS     &kp PERCENT
 &kp LEFT_CONTROL  &trans          &trans          &trans            &kp F11            &kp F5             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp SLASH     &kp ESC
                                                   &kp LEFT_CONTROL  &mo 1              &kp SPACE          &kp ENTER     &kp N0        &kp LEFT_ALT
