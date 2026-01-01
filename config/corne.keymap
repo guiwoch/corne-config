@@ -17,20 +17,6 @@
         };
     };
 
-    behaviors {
-        uc: unicode {
-            compatible = "zmk,behavior-unicode";
-            label = "UNICODE";
-        };
-
-        cedilha: mod_morph {
-            compatible = "zmk,behavior-mod-morph";
-            label = "CEDILHA";
-            mods = <MOD_LSFT MOD_RSFT>;
-            bindings = <&uc U+00E7>, <&uc U+00C7>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -61,8 +47,8 @@
         layer_2 {
             bindings = <
 &kp TAB           &kp GRAVE        &kp LESS_THAN      &kp GREATER_THAN  &kp AT_SIGN  &kp PIPE     &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR      &kp ASTERISK   &kp BACKSPACE
-&kp LEFT_SHIFT    &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp CARET         &kp EQUAL    &kp BSLH     &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp SEMICOLON  &kp SQT
-&kp LEFT_CONTROL  &trans           &trans             &cedilha          &kp TILDE    &kp HASH     &kp COLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERIOD      &kp SLASH      &kp ESCAPE
+&kp LEFT_SHIFT    &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp CARET         &kp EQUAL    &kp BSLH     &kp PLUS       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp SEMICOLON  &kp SQT
+&kp LEFT_CONTROL  &trans           &trans             &trans            &kp TILDE    &kp HASH     &kp COLON      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERIOD      &kp SLASH      &kp ESCAPE
                                                       &kp LEFT_CONTROL  &mo 1        &kp SPACE    &kp RETURN     &mo 2                 &kp LEFT_ALT
             >;
         };
