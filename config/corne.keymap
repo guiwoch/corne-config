@@ -6,9 +6,26 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        // Switching profile alone does not move output off USB, so each of
+        // these sets the endpoint to BLE first, then selects the profile.
+        ble_mac: ble_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE>, <&bt BT_SEL 0>;
+        };
+
+        ble_alt: ble_alt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE>, <&bt BT_SEL 1>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -19,23 +36,23 @@
             require-prior-idle-ms = <100>;
         };
 
-        // Corne bluetooth profiles, only while holding Lower (layer 1).
+        // Output/profile switching, only while holding Lower (layer 1).
         // Q/W/E/R alone stay media keys.
-        bt_profile_0 {
-            bindings = <&bt BT_SEL 0>;
-            key-positions = <1 2>;      // Q + W
+        out_usb {
+            bindings = <&out OUT_USB>;
+            key-positions = <1 2>;      // Q + W  -> wire
             layers = <1>;
         };
 
-        bt_profile_1 {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <2 3>;      // W + E
+        out_ble_mac {
+            bindings = <&ble_mac>;
+            key-positions = <2 3>;      // W + E  -> BLE, profile 0 (mac)
             layers = <1>;
         };
 
-        bt_profile_2 {
-            bindings = <&bt BT_SEL 2>;
-            key-positions = <3 4>;      // E + R
+        out_ble_alt {
+            bindings = <&ble_alt>;
+            key-positions = <3 4>;      // E + R  -> BLE, profile 1
             layers = <1>;
         };
 
